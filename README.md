@@ -106,6 +106,7 @@ In frontend/:
 bash
 
 npm start
+```
 🚀 Example API Routes
 Method	Route	Description
 POST	/api/auth/register	Register user
@@ -116,7 +117,7 @@ POST	/api/cart	Add item to cart
 POST	/api/orders	Place an order
 GET	/api/orders/user	Get logged-in user orders
 GET	/api/orders	(Admin) get all orders
-
+```
 📜 License
 Open-source – free to use and modify.
 Developed with ❤️ by abanoub-aboelsaad
