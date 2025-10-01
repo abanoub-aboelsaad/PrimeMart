@@ -35,6 +35,7 @@ Admins can manage products, view orders, and control the store through a dashboa
 
 ## 📂 Folder Structure
 
+```
 PrimeMart/
 ├── backend/
 │   ├── controllers/        # Business logic (auth, products, orders, etc.)
@@ -64,6 +65,8 @@ PrimeMart/
 ├── .gitignore              # Ignore node_modules, build files, env
 ├── README.md               # Project documentation
 └── package.json            # Root (optional if using monorepo tools like npm workspaces)
+```
+
 
 ---
 
