@@ -37,22 +37,33 @@ Admins can manage products, view orders, and control the store through a dashboa
 
 PrimeMart/
 ├── backend/
-│ ├── controllers/ # Business logic (auth, products, orders)
-│ ├── models/ # Mongoose/DB models
-│ ├── routes/ # API routes
-│ ├── middlewares/ # Auth, error handling
-│ └── server.js # Entry point
+│   ├── controllers/        # Business logic (auth, products, orders, etc.)
+│   ├── models/             # Mongoose/DB models
+│   ├── routes/             # API routes
+│   ├── middlewares/        # Auth, validation, error handling
+│   ├── utils/              # Helper functions (e.g., token generation, logger)
+│   ├── config/             # DB connection, environment configs
+│   ├── tests/              # Backend unit/integration tests
+│   ├── server.js           # Entry point
+│   └── package.json        # Backend dependencies
 │
 ├── frontend/
-│ ├── src/
-│ │ ├── components/ # Reusable UI parts
-│ │ ├── pages/ # Page-level components
-│ │ ├── services/ # API calls
-│ │ └── App.js
-│ └── package.json
+│   ├── public/             # Static files (index.html, favicon, etc.)
+│   ├── src/
+│   │   ├── assets/         # Images, icons, styles
+│   │   ├── components/     # Reusable UI parts (buttons, navbar, cards)
+│   │   ├── pages/          # Page-level components (Home, Login, Cart)
+│   │   ├── services/       # API calls (Axios/fetch wrappers)
+│   │   ├── context/        # React context providers (auth, cart, theme)
+│   │   ├── hooks/          # Custom hooks (useAuth, useFetch)
+│   │   ├── utils/          # Helper functions for frontend
+│   │   ├── App.js          # Main app component
+│   │   └── index.js        # Entry point (ReactDOM render)
+│   └── package.json        # Frontend dependencies
 │
-├── .gitignore
-└── README.md
+├── .gitignore              # Ignore node_modules, build files, env
+├── README.md               # Project documentation
+└── package.json            # Root (optional if using monorepo tools like npm workspaces)
 
 ---
 
